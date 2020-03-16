@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.learn.seata.at.account.mapper.AccountMapper">
+
+    <update id="decreaseAccount">
+      update t_account set amount = amount-${amount} where user_id = #{userId}
+    </update>
+
+    <select id="selectByUserId" parameterType="java.lang.String" resultType="com.learn.seata.at.account.entity.Account">
+         select * from t_account where user_id = #{userId}
+    </select>
+
+</mapper>

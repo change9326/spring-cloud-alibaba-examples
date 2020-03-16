@@ -1,0 +1,28 @@
+server:
+  port: 8081
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848,127.0.0.1:8849,127.0.0.1:8850
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8080
+  application:
+    name: consumer01-service
+
+feign:
+  sentinel:
+    enabled: true
+
+# 允许 Endpoints 的访问
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+edianzu:
+  companyName: 北京华清科技有限公司
+  phone: 15313173701

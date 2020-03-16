@@ -1,0 +1,61 @@
+server:
+  port: 8072
+  max-http-header-size: 4048576
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    alibaba:
+      seata:
+        # 自定义事务组名称 tx_group，需要与服务端一致
+        tx-service-group: my_test_tx_group
+  application:
+    name: seata-at-storage-service
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_storage?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false
+    username: root
+    password: root
+    hikari:
+      minimum-idle: 5
+      idle-timeout: 600000
+      maximum-pool-size: 10
+      auto-commit: true
+      pool-name: MyHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+
+# 允许 Endpoints 的访问
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+dubbo:
+  scan:
+    base-packages: com.learn.seata.at.storage.dubbo
+  protocol:
+    name: dubbo
+    port: -1
+  provider:
+    loadbalance: roundrobin
+  registry:
+    address: nacos://127.0.0.1:8848
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+
+feign:
+  hystrix:
+    enabled: false
+
+logging:
+  level:
+    io:
+      seata: info

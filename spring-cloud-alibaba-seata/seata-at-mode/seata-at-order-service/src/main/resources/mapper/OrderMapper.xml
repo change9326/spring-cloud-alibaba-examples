@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.learn.seata.at.order.mapper.OrderMapper">
+  <!--创建订单-->
+  <insert id="createOrder" keyProperty="id" useGeneratedKeys="true"
+          parameterType="com.learn.seata.at.order.entity.Order">
+      insert into t_order values(null,#{order.orderNo},#{order.userId},#{order.commodityCode},${order.count},${order.amount})
+    </insert>
+</mapper>
