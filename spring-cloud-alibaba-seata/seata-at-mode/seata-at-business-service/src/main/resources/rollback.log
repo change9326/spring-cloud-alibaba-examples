@@ -1,0 +1,45 @@
+2020-03-17 11:31:16,563 INFO SeataMergeMessage timeout=300000,transactionName=dubbo-gts-seata-example
+,clientIp:127.0.0.1,vgroup:my_test_tx_group
+
+2020-03-17 11:31:16,575 INFO Successfully begin global transaction xid = 10.10.3.230:8091:2038142546
+
+2020-03-17 11:31:16,771 INFO SeataMergeMessage xid=10.10.3.230:8091:2038142546,branchType=AT,resourceId=jdbc:mysql://localhost:3306/db_storage,lockKey=t_storage:1
+,clientIp:127.0.0.1,vgroup:my_test_tx_group
+
+2020-03-17 11:31:16,773 INFO Successfully register branch xid = 10.10.3.230:8091:2038142546, branchId = 2038142547
+
+2020-03-17 11:31:16,815 INFO Successfully branch report xid = 10.10.3.230:8091:2038142546, branchId = 2038142547
+
+2020-03-17 11:31:16,815 INFO SeataMergeMessage xid=10.10.3.230:8091:2038142546,branchId=2038142547,resourceId=null,status=PhaseOne_Done,applicationData=null
+,clientIp:127.0.0.1,vgroup:my_test_tx_group
+
+2020-03-17 11:31:17,043 INFO SeataMergeMessage xid=10.10.3.230:8091:2038142546,branchType=AT,resourceId=jdbc:mysql://localhost:3306/db_account,lockKey=t_account:1
+,clientIp:127.0.0.1,vgroup:my_test_tx_group
+
+2020-03-17 11:31:17,043 INFO Successfully register branch xid = 10.10.3.230:8091:2038142546, branchId = 2038142548
+
+2020-03-17 11:31:17,076 INFO SeataMergeMessage xid=10.10.3.230:8091:2038142546,branchId=2038142548,resourceId=null,status=PhaseOne_Done,applicationData=null
+,clientIp:127.0.0.1,vgroup:my_test_tx_group
+
+2020-03-17 11:31:17,077 INFO Successfully branch report xid = 10.10.3.230:8091:2038142546, branchId = 2038142548
+
+2020-03-17 11:31:17,250 INFO SeataMergeMessage xid=10.10.3.230:8091:2038142546,branchType=AT,resourceId=jdbc:mysql://localhost:3306/db_order,lockKey=t_order:71
+,clientIp:127.0.0.1,vgroup:my_test_tx_group
+
+2020-03-17 11:31:17,252 INFO Successfully register branch xid = 10.10.3.230:8091:2038142546, branchId = 2038142549
+
+2020-03-17 11:31:17,263 INFO SeataMergeMessage xid=10.10.3.230:8091:2038142546,branchId=2038142549,resourceId=null,status=PhaseOne_Done,applicationData=null
+,clientIp:127.0.0.1,vgroup:my_test_tx_group
+
+2020-03-17 11:31:17,263 INFO Successfully branch report xid = 10.10.3.230:8091:2038142546, branchId = 2038142549
+
+2020-03-17 11:31:17,276 INFO SeataMergeMessage xid=10.10.3.230:8091:2038142546,extraData=null
+,clientIp:127.0.0.1,vgroup:my_test_tx_group
+
+2020-03-17 11:31:17,305 INFO Successfully rollback branch xid=10.10.3.230:8091:2038142546 branchId=2038142549
+
+2020-03-17 11:31:17,328 INFO Successfully rollback branch xid=10.10.3.230:8091:2038142546 branchId=2038142548
+
+2020-03-17 11:31:17,351 INFO Successfully rollback branch xid=10.10.3.230:8091:2038142546 branchId=2038142547
+
+2020-03-17 11:31:17,352 INFO Successfully rollback global, xid = 10.10.3.230:8091:2038142546

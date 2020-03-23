@@ -1,0 +1,11 @@
+2020-03-17 11:34:42,909 INFO 127.0.0.1:53633 to server channel inactive.
+
+2020-03-17 11:34:42,911 INFO remove channel:[id: 0xfcc04e21, L:0.0.0.0/0.0.0.0:8091 ! R:/127.0.0.1:53633]context:RpcContext{applicationId='seata-at-business-service', transactionServiceGroup='my_test_tx_group', clientId='seata-at-business-service:127.0.0.1:53633', channel=[id: 0xfcc04e21, L:0.0.0.0/0.0.0.0:8091 ! R:/127.0.0.1:53633], resourceSets=null}
+
+2020-03-17 11:34:43,368 INFO 127.0.0.1:53609 to server channel inactive.
+
+2020-03-17 11:34:43,368 INFO remove channel:[id: 0x166db74c, L:/127.0.0.1:8091 ! R:/127.0.0.1:53609]context:RpcContext{applicationId='seata-at-business-service', transactionServiceGroup='my_test_tx_group', clientId='seata-at-business-service:127.0.0.1:53609', channel=[id: 0x166db74c, L:/127.0.0.1:8091 ! R:/127.0.0.1:53609], resourceSets=[]}
+
+2020-03-17 11:34:49,737 INFO rm register success,message:RegisterRMRequest{resourceIds='jdbc:mysql://localhost:3306/db_account', applicationId='seata-at-business-service', transactionServiceGroup='my_test_tx_group'},channel:[id: 0x54b9475d, L:/127.0.0.1:8091 - R:/127.0.0.1:54724]
+
+2020-03-17 11:34:53,269 INFO checkAuth for client:127.0.0.1:54744,vgroup:my_test_tx_group,applicationId:seata-at-business-service
