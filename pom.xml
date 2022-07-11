@@ -21,7 +21,7 @@
         <!--<spring-cloud.version>Greenwich.SR3</spring-cloud.version>-->
         <!--<spring-cloud-alibaba.version>2.1.0.RELEASE</spring-cloud-alibaba.version>-->
 
-        <springboot.version>2.2.2.RELEASE</springboot.version>
+        <springboot.version>2.2.11.RELEASE</springboot.version>
         <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
         <spring-cloud-alibaba.version>2.2.0.RELEASE</spring-cloud-alibaba.version>
 
